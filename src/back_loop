@@ -1,0 +1,47 @@
+ //Serial.println(analogRead(A1));
+  //Serial.println(analogRead(A2));
+  //Serial.println(digitalRead(11));
+  //Serial.println(digitalRead(12));
+  //speedCtrl.line();
+
+/*Serial.println(inter_left);
+if (inter() == 0) {
+  speedCtrl.line();
+}
+else if (inter() == 1)
+{
+    turn_right();
+}
+else if (inter() == 2)
+{ 
+    turn_left();
+}
+else if (inter() == 3){
+run_t();
+}*/
+// part1
+  do{
+    speedCtrl.line();
+  }while(digitalRead(11) == LOW);
+  turn_right();
+  do{
+    speedCtrl.line();
+  }while(digitalRead(11) == LOW);
+  turn_around();
+    do{
+    speedCtrl.line();
+  }while(digitalRead(11) == LOW);
+  turn_right();
+    do{
+    speedCtrl.line();
+  }while(digitalRead(11) == LOW);
+  delay(300);
+    do{
+    speedCtrl.line();
+  }while(digitalRead(12) == LOW || digitalRead(11) == LOW);
+  turn_left();
+  //part2
+  do{
+    speedCtrl.line();
+  }while(digitalRead(11) == 3 || digitalRead(12) == 3);
+  turn_left();
