@@ -7,7 +7,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define left_pin    A1
 #define right_pin   A2
 
-int speed = 90;//80
+int speed = 80;//80
 int max_speed = 150;//130
 
 volatile float kP;
@@ -83,3 +83,4 @@ int SPEED_CTRL::line() {
   }
   
 
+ 

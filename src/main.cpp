@@ -10,19 +10,19 @@ int servoPin = 2;
 PCF8574 pcf8574_E(0x20);//2.4G接收管脚  I2C地址为0X20
 
 #define Robot_stop  0
-#define Robot_go_forward  2
-#define Robot_go_backward  1
-#define Robot_go_leftward  4
-#define Robot_go_rightward  3
-#define Robot_go_cw  6
-#define Robot_go_ccw  5
-#define servo_right  8
-#define servo_left  7
+#define Robot_go_forward  1
+#define Robot_go_backward  2
+#define Robot_go_leftward  3
+#define Robot_go_rightward  4
+#define Robot_go_cw  5
+#define Robot_go_ccw  6
+#define servo_right  7
+#define servo_left  8
 int servo_COUNT = 90;
 
 
 
-int speed_run = 80; 
+int speed_run = 100; 
 SPEED_CTRL speedCtrl;
 volatile int time_100ms;
 
